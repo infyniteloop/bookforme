@@ -1,0 +1,20 @@
+
+-- Biodata Master Create
+create table biodata_mst (
+id bigint not null auto_increment, 
+guest_id varchar(255),
+first_name varchar(255), 
+last_name varchar(255), 
+primary key (id)
+) engine=MyISAM;
+
+
+
+-- Menu Category Master Create
+create table menu_category_mst (
+
+id bigint not null auto_increment, 
+name varchar(255), 
+primary key (id)
+
+) engine=MyISAM
