@@ -18,3 +18,12 @@ name varchar(255),
 primary key (id)
 
 ) engine=MyISAM
+
+
+-- Lobby Master Create
+create table lobby_mst (
+id bigint not null auto_increment, 
+lobby_code varchar(255), 
+location_code varchar(255), 
+primary key (id)
+) engine=MyISAM

@@ -31,16 +31,26 @@
 	<!-- Navigation Bar -->
 	<%@include file="./shared/navbar.jsp" %>
 
-	<!-- /.container -->
+	<!-- container -->
 	
 	<div class="container">
 
         <div class="row">
-			<%@include file="./shared/sidebar.jsp" %>
+        
+        	<!-- Side bar -->
+        	<div class="col-md-3">
+			     <%@include file="./shared/sidebar.jsp" %>
+			</div>
 			
-			<c:if test="${title == 'home'}">
-			<%@include file="home.jsp" %>
-			</c:if>
+			<!-- Page Content -->
+			<div class="col-md-9">
+			
+			
+				<c:if test="${title == 'home'}">
+				<%@include file="home.jsp" %>
+				</c:if>
+			
+			</div>
 			
 			
 	

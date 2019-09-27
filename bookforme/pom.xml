@@ -8,19 +8,47 @@
 	<properties>
 		<failOnMissingWebXml>false</failOnMissingWebXml>
 		<spring.version>4.3.10.RELEASE</spring.version>
+		<jackson.version>2.8.7</jackson.version>
 	</properties>
 
 	<dependencies>
 	
-	
+	<dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-test</artifactId>
+    <version>${spring.version}</version>
+    <scope>test</scope>
+</dependency>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+		
+		
+		<!-- JUNIT Dependency -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.12</version>
+			<scope>test</scope>
+  		</dependency>
+  		
+  		
 		<!-- JSTL Dependency -->
 		<dependency>
 			<groupId>javax.servlet</groupId>
 			<artifactId>jstl</artifactId>
 			<version>1.2</version>
-  		</dependency>
+  		</dependency> 		
   		
-  		
+  		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-web</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+		
 		<!-- Spring MVC Dependency -->
 		<dependency>
 			<groupId>org.springframework</groupId>
@@ -70,6 +98,21 @@
 			<version>3.1.0</version>
 			<scope>provided</scope>
 		</dependency>
+		
+		
+		<!-- Jackson -->
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+			<version>${jackson.version}</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-annotations</artifactId>
+			<version>${jackson.version}</version>
+		</dependency>			
+		
 		
 	</dependencies>
 	<build>

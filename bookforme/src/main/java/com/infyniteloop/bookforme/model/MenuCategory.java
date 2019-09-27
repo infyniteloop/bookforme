@@ -6,7 +6,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity(name = "menu_category_mst")
-public class MenuCategories {
+public class MenuCategory {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
